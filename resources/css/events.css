@@ -1,0 +1,78 @@
+.red {
+    color: #f00;
+}
+
+.events-wrapper {
+    margin-bottom: 30px;
+}
+
+.events-wrapper p {
+    color: #fff;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.event-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.event-title {
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #555;
+}
+
+.event-type {
+    max-width: 300px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.event-type.meeting {
+    background: rgba(255, 78, 107, 0.16);
+    color: #FF4E6B;
+}
+
+.event-type.question {
+    background: rgba(0, 204, 102, 0.16);
+    color: #0C6;
+}
+
+.event-type.conference {
+    background: rgba(255, 187, 51, 0.16);
+    color: #FB3;
+}
+
+.event-type.webinar {
+    background: rgba(77, 180, 255, 0.16);
+    color: #4DB4FF;
+}
+
+.pagination {
+    margin: 10px;
+    text-align: center;
+}
+
+nav[role="navigation"] {
+    margin-top: 30px;
+}
+
+nav[role="navigation"] p {
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav[role="navigation"] svg {
+    width: 30px;
+    height: 30px;
+}

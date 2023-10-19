@@ -1,0 +1,130 @@
+body {
+    background: #131315;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    color: #FF4E6B;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.title {
+    color: #FFFAFB;
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+/* header */
+.header {
+    margin-bottom: 40px;
+}
+
+.header .header_wrapper {
+    border-bottom: 1px solid rgba(255, 78, 107, 0.16);
+}
+
+.header .logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+.header .items {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.header .items, .header .items .item {
+    padding: 0;
+    list-style: none;
+}
+
+.header .items .item + .item {
+    margin-left: 80px;
+}
+
+.header .items .item a {
+    color: #FFFAFB;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid transparent;
+    min-height: 80px;
+}
+
+.header .items .item a.active,
+.header .items .item a:hover {
+    border-bottom: 1px solid #FF4E6B;
+}
+
+/* footer */
+.footer .footer_wrapper {
+    border-top: 1px solid rgba(255, 78, 107, 0.16);
+}
+
+.footer .footer_wrapper .logo-wrapper .logo {
+    text-align: center;
+    display: block;
+    padding: 24px 0;
+}
+
+.footer .footer_wrapper .nav .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 360px;
+    width: 100%;
+}
+
+.footer .footer_wrapper .nav .items .item {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.footer .footer_wrapper .nav .items .item a {
+    padding-top: 10px;
+    padding-bottom: 24px;
+    display: inline-block;
+    color: #FFFAFB;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 16px;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #797979;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 14px;
+    padding-bottom: 15px;
+}

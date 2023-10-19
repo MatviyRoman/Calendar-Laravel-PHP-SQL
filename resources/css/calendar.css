@@ -1,0 +1,372 @@
+/* filter */
+.filter-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.filter-wrapper .btn {
+    border-radius: 16px;
+    padding: 4px 16px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.filter-wrapper .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.filter-wrapper .btn + .btn {
+    margin-left: 24px;
+}
+
+.filter-wrapper .btn.meeting {
+    background: rgba(255, 78, 107, 0.16);
+    color: #FF4E6B;
+}
+
+.filter-wrapper .btn.meeting.active, .filter-wrapper .btn.meeting:hover {
+    background: #FF4E6B;
+    color: #131315;
+}
+
+.filter-wrapper .btn.question {
+    background: rgba(0, 204, 102, 0.16);
+    color: #0C6;
+}
+
+.filter-wrapper .btn.question.active, .filter-wrapper .btn.question:hover {
+    background: #0C6;
+    color: #131315;
+}
+
+.filter-wrapper .btn.conference {
+    background: rgba(255, 187, 51, 0.16);
+    color: #FB3;
+}
+
+.filter-wrapper .btn.conference.active, .filter-wrapper .btn.conference:hover {
+    background: #FB3;
+    color: #131315;
+}
+
+.filter-wrapper .btn.webinar {
+    background: rgba(77, 180, 255, 0.16);
+    color: #4DB4FF;
+}
+
+.filter-wrapper .btn.webinar.active, .filter-wrapper .btn.webinar:hover {
+    background: #4DB4FF;
+    color: #131315;
+}
+
+/* calendar */
+.calendar {
+    border-top: 1px solid rgba(255, 78, 107, 0.16);
+}
+
+.calendar .fc-multimonth {
+    border: none;
+}
+
+.calendar .fc-multimonth-singlecol .fc-multimonth-header {
+    background: #131315;
+}
+
+.calendar .fc-multimonth-title {
+    color: #FFFAFB;
+    font-family: 'Lexend', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px;
+    text-align: left;
+}
+
+.calendar .fc-multiMonth-view.fc-view{
+    justify-content: space-between;
+}
+
+.calendar .fc-view-harness.fc-view-harness-active {
+   /*height: auto !important;
+    min-height: 900px !important; */
+}
+
+.calendar .fc-multimonth-month {
+    width: 33% !important;
+}
+
+.calendar .fc-daygrid-day-events {
+    display: flex;
+}
+
+.calendar .fc-event, .calendar .fc-event:hover, .calendar .fc-event:focus {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    box-shadow: none;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.calendar.fc-theme-standard td, .calendar.fc-theme-standard th {
+    border: none;
+}
+
+.calendar .fc-col-header-cell .fc-col-header-cell-cushion {
+    color: #797979;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.calendar .fc-daygrid-day-top {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .fc-daygrid-day-events1 {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .fc-multimonth-daygrid {
+    background: transparent;
+}
+
+.calendar .fc-daygrid-day-number {
+    color: #FFFAFB !important;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.calendar .fc-daygrid-body-balanced .fc-daygrid-day-events {
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.calendar .fc-multimonth-month {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar .fc-multimonth-month:nth-child(2),
+.calendar .fc-multimonth-month:nth-child(5) {
+    border-right: 1px solid rgba(255, 78, 107, 0.16);
+    border-left: 1px solid rgba(255, 78, 107, 0.16);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.calendar .fc-multimonth-month:nth-child(4)::before {
+    content: '';
+    display: block;
+    width: 500%;
+    border-top: 1px solid rgba(255, 78, 107, 0.16);
+    margin-top: -10px;
+}
+
+/* circle */
+.calendar .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: relative;
+    left: -2px;
+    top: -2px;
+}
+
+.calendar .event-content.meeting {
+    background: #FF4E6B;
+}
+
+.calendar .event-content.question {
+    background: #0C6;
+}
+
+.calendar .event-content.conference {
+    background: #FB3;
+}
+
+.calendar .event-content.webinar {
+    background: #4DB4FF;
+}
+
+/* modal */
+
+.modal .btn.add {
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 4px;
+    background: #FF4E6B;
+    color: #131315;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.modal .btn.add:hover {
+    opacity: 0.5;
+}
+
+.calendar .showEventsModal {
+    display: flex;
+    width: 360px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    background: #131315;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.40);
+}
+
+/* card */
+.card {
+    border: none;
+    border-radius: 0;;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.card + .card {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 78, 107, 0.16);
+}
+
+.card .icon {
+    cursor: pointer;
+}
+
+.card .card-title {
+    color: #FFFAFB;
+    color: #000;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-description {
+    color: #FFFAFB;
+    color: #000;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.card .card-location {
+    color: #797979;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+
+.card .card__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card__footer.meeting {
+    color: #FF4E6B;
+}
+
+.card .card__footer.meeting .card-type {
+    border-radius: 16px;
+    background: rgba(255, 78, 107, 0.16);
+}
+
+.card .card__footer.question {
+    color: #00CC66;
+}
+
+.card .card__footer.question .card-type {
+    border-radius: 16px;
+    background: rgba(0, 204, 102, 0.16);
+}
+
+.card .card__footer.conference {
+    color: #FFBB33;
+}
+
+.card .card__footer.conference .card-type {
+    border-radius: 16px;
+    background: rgba(255, 187, 51, 0.16);
+}
+
+.card .card__footer.webinar {
+    color: #4DB4FF;
+}
+
+.card .card__footer.webinar .card-type {
+    border-radius: 16px;
+    background: rgba(77, 180, 255, 0.16);
+}
+
+.card .card__footer .card-time {
+    color: inherit;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.card .card__footer .card-type {
+    color: inherit;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 5px;
+}
+
+@media (max-width: 991px) {
+    .calendar .fc-multimonth-month {
+        border: none !important;
+    }
+
+    .calendar .fc-multimonth-month::before {
+        display: none !important;
+    }
+
+    .calendar .fc-multimonth-month {
+        width: 100% !important;
+    }
+}
